@@ -1,0 +1,47 @@
+/* ESTILOS GENERALES */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,500&display=swap');
+
+@import 'container.css';
+@import 'h.css';
+@import 'img.css';
+
+*{
+	margin:0%;
+	padding:0%;
+}
+
+body{
+	font-size:16px;
+	background-color:#1b2d33;
+	
+}
+
+#navbar{
+	height:50px;
+	background-color:#24282a;
+	
+}
+
+#hero{
+	font-family: Roboto Slab;
+	font-weight: 500;
+	overflow:auto;
+
+	padding:2%;
+	text-align:center;
+	font-size:50px;
+}
+
+#hero>div>div{
+	float:left;
+	display:none;
+	color:#FFFFFF;
+}
+
+#hero>div{
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+}
