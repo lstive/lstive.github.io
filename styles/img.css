@@ -3,6 +3,7 @@
 	padding:1%;
 	margin-left:auto;
 	margin-right:auto;
+	
 }
 
 .container-icons>div{
@@ -20,3 +21,16 @@
 	margin-left:auto;
 	margin-right:auto;
 }
+
+#soft-1{
+	background-image: url("../images/screenshoots/screenAccountManager.png");
+	background-size: cover;
+	height: 200px;
+}
+
+#soft-2, #soft-3{
+	background-image: url("../images/screenshoots/screenCode.png");
+	background-size: cover;
+	height: 200px;
+}
+

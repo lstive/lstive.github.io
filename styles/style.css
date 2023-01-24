@@ -2,10 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Press+Start+2P&display=swap');
 
 @import 'container.css';
 @import 'h.css';
 @import 'img.css';
+@import 'window.css';
+@import 'table-port.css';
 
 *{
 	margin:0%;
@@ -14,21 +18,23 @@
 
 body{
 	font-size:16px;
-	background-color:#1b2d33;
-	
+	background-color:#e6e6e6;
 }
 
 #navbar{
 	height:50px;
+	width: 100%;
 	background-color:#24282a;
-	
+	position:sticky;
+	top:0px;
 }
 
 #hero{
-	font-family: Roboto Slab;
-	font-weight: 500;
+	text-transform:uppercase;
+	font-family: 'Dosis', sans-serif;
+	font-weight: Bold;
 	overflow:auto;
-
+	background-image: linear-gradient(40deg, rgb(252, 94, 94),  #582ac4);
 	padding:2%;
 	text-align:center;
 	font-size:50px;
@@ -44,4 +50,18 @@ body{
 	display:inline-block;
 	margin-left:auto;
 	margin-right:auto;
+	text-align:center;
+}
+
+.profile{
+	width: 20%;
+	height: 20%;
+}
+
+p{
+	font-family: 'Dosis', sans-serif;
+	font-size:19px;
+	padding:4%;
+	text-align:justify;
+	color:#ffffff;
 }

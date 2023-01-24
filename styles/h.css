@@ -3,5 +3,12 @@ h2{
 	text-align:center;
 	font-family:Rubik;
 	font-weight: bold;
-	color:#ccffff;
+	color:#ffffff;
+	font-family: 'Dosis', sans-serif;
+}
+
+.out-h2>h2{
+	font-family: 'Dosis', sans-serif;
+	font-weight: bold;
+	color:black;
 }
