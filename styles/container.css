@@ -1,6 +1,5 @@
 .container{
 	margin:1%;
-	
 }
 
 .col-2{
@@ -28,7 +27,7 @@
 
 .row-container{
 	margin:1%;
-	
+	overflow:auto;
 }
 
 .col{

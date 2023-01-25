@@ -29,6 +29,16 @@ body{
 	top:0px;
 }
 
+.profile{
+	background-color: silver;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 40px;
+	width: 50%;
+}
+
 #hero{
 	text-transform:uppercase;
 	font-family: 'Dosis', sans-serif;
@@ -38,6 +48,7 @@ body{
 	padding:2%;
 	text-align:center;
 	font-size:50px;
+	z-index: 4;
 }
 
 #hero>div>div{
@@ -65,3 +76,50 @@ p{
 	text-align:justify;
 	color:#ffffff;
 }
+
+.out-h2{
+	margin-top:4%;
+}
+
+@media(max-width:900px){
+	div[class^="col"]{
+		width:96%;
+		margin-top:6%;
+	}
+
+	div[id^="soft"]{
+		height:500px;
+	}
+
+	.navbar{
+		position:sticky;
+		top:0px;
+	}
+
+	
+
+	.table-port img{
+		width:50px;
+		margin:0%;
+		margin:4%;
+	}
+
+	.window-col-2{
+		display:block;
+		width:100%;
+		padding:1%;
+		margin:1%;
+	}
+
+	div[class^="window"]{
+		width: 92%;
+	}
+
+	.out-h2{
+		margin-top:10%;
+	}
+}
+.window-profile{
+    width:50px;
+}
+
