@@ -15,7 +15,21 @@
 
 </head>
 
-<div id="navbar">a</div>
+<div id="navbar">
+	<div id="button-hide">
+		<button id="expand-nav"><img src="images/menu.png" alt=""></button>
+	</div>
+	<div>
+		<a  href="#move-about">Sobre mi</a>
+	</div>
+	<div>
+		<a href="#move-habilities">Habilidades</a>
+	</div>
+	<div>
+		<a href="#move-projects">Proyectos</a>
+	</div>
+	
+</div>
 <body>
 	
 	<div id="hero">
@@ -37,19 +51,19 @@
 	<div id="content">
 		<div class="container">
 			<div class="profile">
-				<img alt="foto" src="images/menu.png" />
+				<img id="move-about" alt="foto" src="images/menu.png" />
 			</div>
 		</div>
-		<div class="container">
+		<div  class="container">
 			<div class="window-col-2">
-				<h2>Sobre mi</h2>
-				<p>
+				<h2 >Sobre mi</h2>
+				<p id="move-habilities">
 					¡Hola a todos! Soy un estudiate universitario de 4to año, me considero una persona
 					autodidacta.
 				</p>
 			</div>
 		</div>
-		<div class="container">
+		<div  class="container">
 			<div class="window-col-2">
 				<h2>Habilidades</h2>
 				<table class="table-port">
@@ -94,7 +108,7 @@
 							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" />
 							
 						</td>
-						  <td>
+						  <td id="move-projects">
 
 							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
           
@@ -103,7 +117,7 @@
 				</table>
 			</div>
 		</div>
-		<div class="container">
+		<div  class="container">
 			<div class="out-h2">
 				<h2>Proyectos</h2>
 			</div>
@@ -111,15 +125,6 @@
 		<div class="row-container">
 			<div class="col">
 				<div class="header-window">
-					<span class="material-symbols-outlined">
-						remove
-					</span>
-					<span class="material-symbols-outlined">
-						check_box_outline_blank
-					</span>
-					<span class="material-symbols-outlined">
-						close
-					</span>
 				</div>
 				<div id="soft-1"></div>
 				<p>
@@ -136,15 +141,6 @@
 			</div>
 			<div class="col">
 				<div class="header-window">
-					<span class="material-symbols-outlined">
-						remove
-					</span>
-					<span class="material-symbols-outlined">
-						check_box_outline_blank
-					</span>
-					<span class="material-symbols-outlined">
-						close
-					</span>
 				</div>
 				<div id="soft-2"></div>
 				<p>
@@ -161,15 +157,6 @@
 			</div>
 			<div class="col">
 				<div class="header-window">
-					<span class="material-symbols-outlined">
-						remove
-					</span>
-					<span class="material-symbols-outlined">
-						check_box_outline_blank
-					</span>
-					<span class="material-symbols-outlined">
-						close
-					</span>
 				</div>
 				<div id="soft-3"></div>
 				<p>
@@ -190,6 +177,7 @@
 	<script src="scripts/load.js"></script>
 	<script src="scripts/background/esferas.js"></script>
 	<script src="scripts/fisicas/loop.js"></script>
+	<script src="scripts/navbar/expandNavbar.js"></script>
 </body>
 			
 </html>

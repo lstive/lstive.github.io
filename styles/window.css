@@ -26,9 +26,8 @@ div[class^="window profile"]{
 .header-window{
     height:30px;
     display:block;
-    background-color: rgb(252, 107, 107);
     text-align:right;
-    background-color:  rgb(252, 94, 94);
+    background-color: rgb(172, 100, 255);
     
     
 }

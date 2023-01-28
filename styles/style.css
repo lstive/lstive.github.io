@@ -19,14 +19,50 @@
 body{
 	font-size:16px;
 	background-color:#e6e6e6;
+	top:-50px;
 }
 
 #navbar{
 	height:50px;
 	width: 100%;
 	background-color:#24282a;
-	position:sticky;
-	top:0px;
+	position: sticky;
+	text-align:right;
+	overflow:visible;
+	top: 0px;
+}
+
+#navbar>div{
+	float:right;
+	overflow: hidden;
+	height: 100%;
+	visibility: visible;
+}
+
+#navbar>div:first-child{
+	visibility: visible;
+}
+
+#navbar>div>a{
+	font-family: 'Dosis', sans-serif;
+	font-weight: bold;
+	padding-left:40px;
+	padding-right:40px;
+	float:center;
+	display: block;
+	padding-top:15px;
+	padding-bottom: 16px;
+	text-decoration:none;
+	color: #FFFFFF;
+	
+}
+
+#navbar>div>a:hover{
+	background-color: #582ac4;
+}
+
+#navbar>div:first-child{
+	width:0%;
 }
 
 .profile{
@@ -81,7 +117,19 @@ p{
 	margin-top:4%;
 }
 
+@media(min-width:1200px){
+	#navbar>div{
+		visibility: visible;
+	}
+}
+
 @media(max-width:900px){
+	body{
+		display: block;
+		position:absolute;
+		top:-150px;
+	}
+
 	div[class^="col"]{
 		width:96%;
 		margin-top:6%;
@@ -91,12 +139,46 @@ p{
 		height:500px;
 	}
 
-	.navbar{
-		position:sticky;
+	#navbar{
 		top:0px;
+		transition: 0.5s;
+		z-index: 100;
+		overscroll-behavior: auto;
 	}
 
-	
+	#navbar>div{
+		display:block;
+		width:100%;
+		visibility: hidden;
+		background-color: #24282a;
+	}
+
+	#navbar>div:first-child{
+		display:block;
+		width:56px;
+		float:right;
+		margin-right: 20px;
+		height: 50px;
+	}
+
+	#expand-nav{
+		background-color: #24282a;
+		border: none;
+	}
+
+	#navbar>div:first-child a{
+		display:block;
+		padding:0px;
+		
+		
+	}
+
+	#navbar img{
+		filter: invert(100%);
+		display:block;
+		width:45px;
+		height: 45px;
+	}
 
 	.table-port img{
 		width:50px;
