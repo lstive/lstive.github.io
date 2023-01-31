@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/alter/style.css">
+    </head>
+    <body>
+        <div><a href="../index.html">Volver</a></div>
+        <div id="entrada">
+            <p>
+                1) La expresion debe ser ingresada con parentesis, ej. (a+b). Puede ser cualquier letra del abecedario. <br>
+                2) Los valores a evaluar son por orden de abecedario, ej. (a+b.a) la letra a tiene prioridad y si se ingresan los valores 10 entonces la sustitucion es (1+0.1) <br>
+                el valor si hay letra repetida solo se ingresa el valor una vez y sera sustituido en todas las coincidencias.
+            </p>
+            <label for="">Ingresa la expresion</label>
+            <input id="expresion" type="text" name="expresion"><br>
+            <label for="">Ingresa los valores a evaluar</label>
+            <input id="valores" type="text" name="valores">
+            <button id="evaluar">Evaluar</button>
+            <button id="evaluar-tabla">Tabla de verdad y evaluar</button><br>
+            <label for="">Respuesta</label>
+            <input id="respuesta" type="text" name="valores">
+        </div>
+        <div id="contenido"></div>
+
+        <script src="../scripts/algebra/Stack.js"></script>
+        <script src="../scripts/algebra/BoolTable.js"></script>
+        <script src="../scripts/algebra/Bool.js"></script>
+        
+    </body>
+</html>
