@@ -1,0 +1,90 @@
+/* estilos generales */
+body{
+    padding:0px;
+    margin:0px;
+    border:0px;
+    font-family: 'Mukta', sans-serif;
+    font-size:17px;
+    font-weight:400;
+    background-color:#f5f5f5;
+}
+
+/* navbar */
+#navbar{
+    top:0px;
+    height:50px;
+    background-color:#000000;
+    position:sticky;
+    color:#ffffff;
+    gap:20px;
+    transition:1s;
+}
+
+#navbar>a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+#navbar>a:hover{
+    color:#ff4a5c;
+}
+
+/* icono navbar */
+#open>img{
+    display:block;
+    height:25px;
+    width:25px;
+    filter:invert();
+}
+
+#open{
+    height:50px;
+    background-color:#000000;
+    text-align:center;
+    vertical-align:middle;
+    display:none;
+}
+
+#open:hover{
+    cursor:pointer;
+}
+
+/* responsive */
+@media(min-width:600px){
+    #navbar{
+	height:50px;
+	background-color:#000000;
+	position:sticky;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:flex-start;
+	align-items:center;
+
+    }
+
+    #navbar>a:nth-child(2){
+	margin-left:20px;
+    }
+}
+
+@media(max-width:599px){
+    #navbar{
+	display:flex;
+	flex-direction:column;
+	background-color:#000000;
+	position:sticky;
+	align-items:center;
+	overflow:hidden;
+
+	column-gap:0px;
+	height:50px;
+    }
+
+    /* icono navbar */
+    #open{
+	padding-top:10px;
+	display:unset;
+	align-self:flex-end;
+    }
+}
