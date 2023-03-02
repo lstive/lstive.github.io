@@ -11,15 +11,11 @@ divisorNodes.forEach(node => {
     }
 });
 
-let width = window.innerWidth / 12;
+let width = window.innerWidth / 6;
 document.getElementById("divisor").style.height = width / 2 + "px";
 let widthOffset = 0;
 let startTop = 0;
 document.getElementById("content").style.marginTop = width / 2 + "px";
-
-// auto ajustar al cambiar de tamano la ventana
-
-i = 0;
 circles.forEach(node => {
     node.style.width = width  + "px";
     node.style.height = width  + "px";
@@ -29,10 +25,30 @@ circles.forEach(node => {
     i++;
 });
 
+// auto ajustar al cambiar de tamano la ventana
+window.addEventListener("resize", event =>{
+    width = window.innerWidth / 6;
+    document.getElementById("divisor").style.height = width / 2 + "px";
+    widthOffset = 0;
+    startTop = 0;
+    document.getElementById("content").style.marginTop = width / 2 + "px";
+    
+i = 0;
+circles.forEach(node => {
+    node.style.width = width  + "px";
+    node.style.height = width  + "px";
+    node.style.left = startTop + "px";
+
+    startTop += width;
+    i++;
+});
+});
+
 let delta = 0;
 let time = 0;
 let xOffset = 0;
 let tempNode = null;
+let acum = 0;
 
 // dibujado
 function draw(newTime){
@@ -41,13 +57,13 @@ function draw(newTime){
     if(!isNaN(delta)){
 	circles.forEach(node => {
 	    let x = node.offsetLeft;
-	    node.style.left = x - 0.04 * delta + "px";
+	    node.style.left = x - delta * 0.05 + "px";
 	})
 
 	// detectando offset
 	circles.forEach(node => {
-	    if(node.offsetLeft < -width){
-		node.style.left = window.innerWidth + width + "px";
+	    if(node.offsetLeft < - width){
+		node.style.left = window.innerWidth + width  + "px";
 	    }
 	})
     }
@@ -57,3 +73,4 @@ function draw(newTime){
 }
 
 requestAnimationFrame(draw);
+
