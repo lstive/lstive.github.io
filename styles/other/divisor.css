@@ -1,0 +1,23 @@
+#hero{
+    background-color:#ff4a5c;
+}
+
+#divisor{
+    background-color:#ff4a5c;
+    height:60px;
+ 
+}
+
+#divisor>div{
+    position:absolute;
+    border-radius:100%;
+    float:left;
+}
+
+.item-top{
+    background-color:#ff4a5c;
+}
+
+.item-bot{
+    background-color:#f5f5f5;
+}
