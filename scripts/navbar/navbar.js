@@ -7,7 +7,7 @@ open.addEventListener("click", event => {
 	navbar.style.height = "50px";
 	isOpen = false;
     }else{
-	navbar.style.height = "240px";
+	navbar.style.height = "230px";
 	isOpen = true;
     }
 });

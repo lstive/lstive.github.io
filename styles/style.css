@@ -9,12 +9,24 @@ body{
     background-color:#f5f5f5;
 }
 
+/* offset */
+#hero-off{
+    top:-50px;
+    height:50px;
+}
+
+div[id$="off"]{
+    position:relative;
+    top:-50px;
+}
+
 /* navbar */
 #navbar{
     top:0px;
     height:50px;
     background-color:#000000;
-    position:sticky;
+    position:fixed;
+    width:100%;
     color:#ffffff;
     gap:20px;
     transition:1s;
@@ -38,7 +50,7 @@ body{
 }
 
 #open{
-    height:50px;
+    
     background-color:#000000;
     text-align:center;
     vertical-align:middle;
@@ -54,13 +66,12 @@ body{
     #navbar{
 	height:50px;
 	background-color:#000000;
-	position:sticky;
+	position:fixed;
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:flex-start;
 	align-items:center;
-
     }
 
     #navbar>a:nth-child(2){
@@ -73,18 +84,20 @@ body{
 	display:flex;
 	flex-direction:column;
 	background-color:#000000;
-	position:sticky;
+	position:fixed;
+	width:100%;
 	align-items:center;
 	overflow:hidden;
-
-	column-gap:0px;
 	height:50px;
     }
 
     /* icono navbar */
     #open{
-	padding-top:10px;
+	padding:10px;
 	display:unset;
 	align-self:flex-end;
+	display:block;
+	vertical-align:middle;
+	text-align:center;
     }
 }
