@@ -1,12 +1,7 @@
-#hero{
-    background-color:#ff4a5c;
-    height:60vh;
-}
-
 #divisor{
     background-color:#ff4a5c;
     height:60px;
- 
+    overflow-x:hidden;
 }
 
 #divisor>div{

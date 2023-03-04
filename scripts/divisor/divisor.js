@@ -1,3 +1,6 @@
+
+// reiniciar animacion cuando se regrese el focus o vuelva a la pestana
+
 let divisorNodes = document.getElementById("divisor").childNodes;
 let circles = [];
 let i = 0;
@@ -57,7 +60,7 @@ function draw(newTime){
     if(!isNaN(delta)){
 	circles.forEach(node => {
 	    let x = node.offsetLeft;
-	    node.style.left = x - delta * 0.05 + "px";
+	    node.style.left = x - 1 + "px";
 	})
 
 	// detectando offset
