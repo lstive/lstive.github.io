@@ -1,5 +1,8 @@
 @import url("other/hero.css");
 @import url("other/divisor.css");
+@import url("other/content.css");
+
+@import url("uniques/h1.css");
 
 /* estilos generales */
 body{
