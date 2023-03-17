@@ -76,4 +76,3 @@ function draw(newTime){
 }
 
 requestAnimationFrame(draw);
-

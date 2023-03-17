@@ -1,5 +1,5 @@
 div[id$="value"]{
-    background-color:#e88ff2;
+    background-color:#a9f07d;
     padding:0%;
     text-align:left;
     height:12%;
@@ -8,4 +8,10 @@ div[id$="value"]{
     color:#ffffff;
     transition:4s;
     width:0%;
+}
+
+div[id$="value"]{
+    display:inline-block;
+    height:auto;
+    vertical-align:middle;
 }

@@ -2,21 +2,21 @@
 <html>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portafolio</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
-	
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
 	<link href="styles/style.css" rel="stylesheet" />
 </head>
+
 <body>
 	<div id="navbar">
 		<button id="open"><img alt="" src="images/menu.svg" /></button>
 		<a href="#hero-off">Sobre mi</a>
 		<a href="#divisor-off">Habilidades</a>
-		<a href="#content-off">Proyectos</a>
+		<a href="#project-off">Proyectos</a>
 	</div>
 	<div id="hero-off"></div>
 	<div id="hero">
@@ -47,50 +47,91 @@
 		<div id="hab">
 			<div class="hab-container">
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
-				<div id="html-value">60%</div>
-          			<div>HTML</div>
+				<div>HTML</div>
+				<div id="html-value"><span>60%</span></div>
+          			
 			</div>
 			<div class="hab-container">
 				
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
+				<div>CSS</div>
 				<div id="css-value">60%</div>
-          			<div>CSS</div>
+          			
 			</div>
 			<div class="hab-container">
 				
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-				<div id="javascript-value">70%</div>
 				<div>Javascript</div>
+				<div id="javascript-value">70%</div>
+				
 			</div>
 			<div class="hab-container">
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
-				<div id="jquery-value">50%</div>
 				<div>jQuery</div>
+				<div id="jquery-value">50%</div>
+				
 			</div>
 			<div class="hab-container">
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" />
-				<div id="electron-value">40%</div>
 				<div>Electron js</div>
+				<div id="electron-value">40%</div>
+				
 			</div>
 			<div class="hab-container">
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" />
-				<div id="c-value">85%</div>
 				<div>C</div>
+				<div id="c-value">85%</div>
+				
 			</div>
 			<div class="hab-container">
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-				<div id="java-value">60%</div>
 				<div>Java</div>
+				<div id="java-value">60%</div>
+				
 			</div>
 			<div class="hab-container">
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-				<div id="git-value">50%</div>
 				<div>Git</div>
+				<div id="git-value">50%</div>
+				
 			</div>
 		</div>
-		<h1>Proyectos</h1>
-	</div>
+		<div id="project-off"></div>
+		
+		<div id="rotated"></div>
+		<div id="project">
+			<h1>Proyectos</h1>
+			<div id="pro">
+				<div class="pro-container-even">
+					<div><img alt="" src="images/screenshoots/screenAccountManager.png" /></div>
+					<div>
+						<h2>Administrador de cuentas</h2>
+						<div>
+							<a href="https://github.com/lstive/accountManager" target="_blank">GitHub</a>
+						</div>
+						<p>
+							Un software para la administración de cuentas de usuarios y plataformas para facilitar la gestión de cuentas.
+						</p>
+					</div>
+				</div>
+				<div class="pro-container-odd">
+					<div><img alt="" src="images/screenshoots/screenCode.png" /></div>
+					<div>
+						<h2>Algebra booleana</h2>
+						<div>
+							<a href="https://github.com/lstive/AlgebraBooleana" target="_blank">GitHub</a>
+							<a href="https://github.com/lstive/AlgebraBooleana" target="_blank">Probar</a>
+						</div>
+						<p>
+							Es una serie de clases para la evaluación de expresiones de algebra booleana, la clase Bool. Los valores evaluados pueden ser generados a traves de los bits que son creados con la tabla de la verdad combinacional de la clase BoolTable.
 
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="scripts/navbar/navbar.js"></script>
 	<script src="scripts/divisor/divisor.js"></script>
 	<script src="scripts/habilities/hab.js"></script>

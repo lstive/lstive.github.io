@@ -1,9 +1,13 @@
 @import url("other/hero.css");
 @import url("other/divisor.css");
 @import url("other/content.css");
-
+@import url("other/projects.css");
 @import url("uniques/h1.css");
 @import url("uniques/values.css");
+
+html{
+    height:100%;
+}
 
 /* estilos generales */
 body{
@@ -26,7 +30,7 @@ body{
 
 div[id$="off"]{
     position:relative;
-    top:-50px;
+    top:100px;
 }
 
 /* navbar */
@@ -48,7 +52,7 @@ div[id$="off"]{
 }
 
 #navbar>a:hover{
-    color:#ff4a5c;
+    color:#a9f07d;
 }
 
 /* icono navbar */
@@ -109,5 +113,10 @@ div[id$="off"]{
 	display:block;
 	vertical-align:middle;
 	text-align:center;
+    }
+
+    div[id$="off"]{
+	position:relative;
+	top:-50px;
     }
 }

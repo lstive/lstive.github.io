@@ -5,7 +5,7 @@ habs.forEach(node => {
 
 // evento
 window.addEventListener("scroll", event => {
-    if(window.pageYOffset + 150 > document.getElementById("content").offsetTop){
+    if(window.pageYOffset + 200 > document.getElementById("content").offsetTop){
 	for(let i = 0; i < habs.length; i++){
 	    habs[i].style.width = habs[i].textContent;
 	}
